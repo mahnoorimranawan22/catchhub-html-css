@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 1140px Proportional Container */
+.content-wrap {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Two-column layout */
+.grid-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.col-text {
+  flex: 1;
+}
+
+.col-media {
+  flex: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- SVG Organic Waves --- */
+.wave-divider {
+  width: 100%;
+  line-height: 0;
+  background-color: #ffffff;
+}
+
+.wave-divider svg {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+
+.wave-divider.flip {
+  transform: rotate(180deg);
+}
+
+/* --- 1. Hero (White) --- */
+.section-hero {
+  padding: 85px 0 50px;
+  background-color: #ffffff;
+}
+
+.hero-media {
+  justify-content: flex-end;
+}
+
+.brand-logo {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #8c8c8c;
+  margin-bottom: 26px;
+}
+
+/* Store Buttons */
+.store-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.store-row.center {
+  justify-content: center;
+}
+
+.store-btn img {
+  height: 44px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.store-btn:hover img {
+  transform: translateY(-2px);
+}
+
+/* --- 2 & 3. Channels & Messages (Light Gray Wave Core #f4f5f8) --- */
+.section-channels {
+  background-color: #f4f5f8;
+  padding: 40px 0 60px;
+}
+
+.section-messages {
+  background-color: #f4f5f8;
+  padding: 50px 0 40px;
+}
+
+/* --- 4. In Future (White) --- */
+.section-future {
+  background-color: #ffffff;
+  padding: 70px 0 60px;
+}
+
+/* Typography for Features */
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: #111111;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 0.96rem;
+  font-weight: 400;
+  color: #7b7b7b;
+  line-height: 1.75;
+}
+
+/* --- 5. Footer --- */
+.section-footer {
+  padding: 60px 0 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.footer-cta {
+  font-size: 0.88rem;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.support-text {
+  margin-top: 34px;
+  font-size: 0.86rem;
+  color: #888888;
+}
+
+.support-text a {
+  color: #0084ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-logo {
+  margin-top: 30px;
+}
+
+.footer-logo img {
+  max-width: 85px;
+  height: auto;
+  display: inline-block;
+}
+
+/* Mobile Breakpoints */
+@media (max-width: 860px) {
+  .grid-two {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .brand-logo {
+    margin: 0 auto 18px auto;
+  }
+
+  .store-row {
+    justify-content: center;
+  }
+
+  .wave-divider svg {
+    height: 50px;
+  }
+}

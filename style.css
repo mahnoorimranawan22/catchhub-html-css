@@ -28,7 +28,7 @@ h2 {
     letter-spacing: 12px;
     font-weight: 600;
     color: #232323;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
@@ -42,13 +42,19 @@ p {
 
 .feature p,
 .feature-text p {
-    font-size: 32px;
+    font-size: 29px;
     font-weight: 300;
     color: #888888;
     line-height: 1.45;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     margin: 0 auto;
-    max-width: 620px;
+    max-width: 760px;
+}
+
+.feature p span,
+.feature-text p span {
+    display: block;
+    white-space: nowrap;
 }
 
 a {
@@ -79,7 +85,7 @@ a {
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
-    padding: 80px 6vw 120px;
+    padding: 60px 6vw 70px;
 }
 
 .hero-inner {
@@ -135,7 +141,7 @@ a {
 /* ---------- Feature sections ---------- */
 .feature {
     position: relative;
-    padding: 110px 6vw;
+    padding: 65px 6vw;
 }
 
 .feature-inner {
@@ -157,12 +163,12 @@ a {
 
 .feature-text {
     flex: 1 1 380px;
-    max-width: 640px;
+    max-width: 720px;
     text-align: center;
 }
 
 .feature--future {
-    padding-bottom: 90px;
+    padding-bottom: 30px;
 }
 
 .feature--future .feature-text {
@@ -175,10 +181,10 @@ a {
 .category-icons {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 16px;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 74px;
+    margin-bottom: 36px;
 }
 
 .category-item {
@@ -188,34 +194,35 @@ a {
 }
 
 .category-circle {
-    width: 66px;
-    height: 66px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
-    border: 1px solid #ebebeb;
+    border: 1px solid #dcdce2;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #cecece;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    color: #c7c7cf;
+    transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .category-circle svg {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 }
 
 .category-circle:hover {
-    color: #aaaaaa;
-    border-color: #d0d0d0;
+    color: #999999;
+    border-color: #bbbbbb;
+    transform: translateY(-2px);
 }
 
 .category-label {
-    font-size: 14px;
-    color: #dbdbdb;
-    margin-top: 10px;
+    font-size: 16px;
+    color: #d0d0d6;
+    margin-top: 12px;
     font-weight: 300;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 }
 
 /* ---------- Glow + shadow behind the phone mockups ---------- */
@@ -290,19 +297,19 @@ a {
 .download {
     position: relative;
     text-align: center;
-    padding: 110px 6vw 80px;
+    padding: 40px 6vw 60px;
 }
 
 .download-label {
     font-size: 24px;
     color: #2b2b2b;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
 .download .store-buttons {
     justify-content: center;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
 }
 
 .contact {
@@ -391,6 +398,11 @@ a {
 
     .feature-text {
         text-align: center;
+    }
+
+    .feature p span,
+    .feature-text p span {
+        white-space: normal;
     }
 
     .category-icons {
